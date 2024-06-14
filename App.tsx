@@ -1,6 +1,7 @@
 import { NativeBaseProvider } from "native-base";
 import { StatusBar, Text, View } from "react-native";
 
+import { Loading } from "@components/Loading";
 import {
   Roboto_400Regular,
   Roboto_700Bold,
@@ -21,7 +22,8 @@ export default function App() {
         translucent
       />
 
-      {fontsLoaded ? <View /> : <View />}
+      <Loading />
+      {/* {fontsLoaded ? <View /> : <Loading />} */}
     </NativeBaseProvider>
   );
 }
