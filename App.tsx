@@ -1,5 +1,5 @@
 import { NativeBaseProvider } from "native-base";
-import { StatusBar, Text, View } from "react-native";
+import { StatusBar, View } from "react-native";
 
 import { Loading } from "@components/Loading";
 import {
@@ -22,8 +22,7 @@ export default function App() {
         translucent
       />
 
-      <Loading />
-      {/* {fontsLoaded ? <View /> : <Loading />} */}
+      {fontsLoaded ? <Loading /> : <Loading />}
     </NativeBaseProvider>
   );
 }
